@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-/* #1 SafeArea */
-// import 'safeArea/safearea.dart';
-import 'safeArea/maintainBottomViewPadding_check.dart';
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -15,11 +11,44 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      title: 'Flutter SafeArea Sample',
-      home: const MainApp(),
-      /* #1 SafeArea */
-      // home: const SafeAreaSample(),
-      // home: const MainApp(),
+      title: 'Flutter Expanded Sample',
+      home: const MyStatelessWidget(),
+    );
+  }
+}
+
+class MyStatelessWidget extends StatelessWidget {
+  const MyStatelessWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Expanded Column Sample'),
+      ),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            Container(
+              color: Colors.blue,
+              height: 100,
+              width: 100,
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.amber,
+                height: 100,
+                width: 100,
+              ),
+            ),
+            Container(
+              color: Colors.blue,
+              height: 100,
+              width: 100,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
