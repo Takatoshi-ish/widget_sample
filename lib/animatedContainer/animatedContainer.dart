@@ -1,52 +1,30 @@
 import 'package:flutter/material.dart';
 
-class AnimatedContainerSample extends StatelessWidget {
+class AnimatedContainerSample extends StatefulWidget {
   const AnimatedContainerSample({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width * 0.25;
+  State<AnimatedContainerSample> createState() =>
+      _AnimatedContainerSampleState();
+}
 
+class _AnimatedContainerSampleState extends State<AnimatedContainerSample> {
+  Color _color = Colors.blue;
+
+  void _onTap() => setState(() => _color = Colors.red);
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        margin: EdgeInsets.only(top: 100),
-        child: Wrap(
-          direction: Axis.vertical,
-          // runAlignment: WrapAlignment.spaceBetween,
-          children: <Widget>[
-            Container(
-              width: width,
-              height: width,
-              color: Colors.blue,
-            ),
-            Container(
-              width: width,
-              height: width,
-              color: Colors.green,
-            ),
-            Container(
-              width: width,
-              height: width,
-              color: Colors.red,
-            ),
-            Container(
-              width: width,
-              height: width,
-              color: Colors.orange,
-            ),
-            Container(
-              width: width,
-              height: width,
-              color: Colors.yellow,
-            ),
-            Container(
-              width: width,
-              height: width,
-              color: Colors.deepPurple,
-            ),
-          ],
-        ),
+      appBar: AppBar(
+        title: const Text('AnimatedContainer'),
       ),
+      body: AnimatedContainer(
+        color: _color,
+        duration: const Duration(seconds: 1),
+        width: 100,
+        height: 100,
+      ),
+      floatingActionButton: FloatingActionButton(onPressed: _onTap),
     );
   }
 }
