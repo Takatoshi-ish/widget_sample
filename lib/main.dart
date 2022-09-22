@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'wrap/wrap.dart';
+import 'animatedContainer/animatedContainer.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       title: 'Flutter Expanded Sample',
-      home: const WrapSample(),
+      home: const AnimatedContainerSample(),
     );
   }
 }
