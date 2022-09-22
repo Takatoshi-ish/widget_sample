@@ -9,22 +9,28 @@ class AnimatedContainerSample extends StatefulWidget {
 }
 
 class _AnimatedContainerSampleState extends State<AnimatedContainerSample> {
-  Color _color = Colors.blue;
+  bool selected = false;
 
-  void _onTap() => setState(() => _color = Colors.red);
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('AnimatedContainer'),
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          selected = !selected;
+        });
+      },
+      child: Center(
+        child: AnimatedContainer(
+          width: selected ? 200.0 : 100.0,
+          height: selected ? 100.0 : 200.0,
+          color: selected ? Colors.red : Colors.blue,
+          alignment:
+              selected ? Alignment.center : AlignmentDirectional.topCenter,
+          duration: const Duration(seconds: 2),
+          curve: Curves.fastOutSlowIn,
+          child: const FlutterLogo(size: 75),
+        ),
       ),
-      body: AnimatedContainer(
-        color: _color,
-        duration: const Duration(seconds: 1),
-        width: 100,
-        height: 100,
-      ),
-      floatingActionButton: FloatingActionButton(onPressed: _onTap),
     );
   }
 }
