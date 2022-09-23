@@ -10,14 +10,14 @@ class AnimatedContainerSample extends StatefulWidget {
 
 class _AnimatedContainerSampleState extends State<AnimatedContainerSample> {
   bool selected = false;
-  double _position = 0;
+  double _radians = 0;
 
   void _onTap() {
     if (!selected) {
-      _position = 300;
+      _radians = 45;
       selected = true;
     } else {
-      _position = 0;
+      _radians = 0;
       selected = false;
     }
     setState(() {});
@@ -26,15 +26,18 @@ class _AnimatedContainerSampleState extends State<AnimatedContainerSample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('AnimatedContainer'),
-      ),
-      body: AnimatedContainer(
+      body: Container(
+        alignment: Alignment.center,
+        child: AnimatedContainer(
+          alignment: Alignment.center,
           width: 100,
           height: 100,
           color: Colors.blue,
-          duration: const Duration(seconds: 2),
-          transform: Matrix4.translationValues(_position, _position, 0)),
+          duration: const Duration(seconds: 1),
+          transform: Matrix4.rotationZ(_radians),
+          child: const FlutterLogo(size: 75),
+        ),
+      ),
       floatingActionButton: FloatingActionButton(onPressed: _onTap),
     );
   }
