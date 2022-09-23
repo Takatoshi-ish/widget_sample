@@ -23,9 +23,10 @@ class _OpacitySampleState extends State<OpacitySample> {
           opacity: opacityLevel,
           duration: const Duration(seconds: 1),
           child: const FlutterLogo(
-            size: 100.0,
+            size: 200.0,
           ),
         ),
+        SizedBox(height: 20),
         ElevatedButton(
           onPressed: _changeOpacity,
           child: const Icon(Icons.refresh),
