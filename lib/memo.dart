@@ -13,6 +13,11 @@
 // import 'wrap/wrap.dart';
 // home: const WrapSample(),
 
-/* #3 Wrap */
+/* #4 AnimatedContainer */
 // import 'animatedContainer/animatedContainer.dart';
 // home: const AnimatedContainerSample(),
+
+/* #5 Opacity */
+// import 'opacity/opacity.dart';
+// home: OpacitySample(),
+
