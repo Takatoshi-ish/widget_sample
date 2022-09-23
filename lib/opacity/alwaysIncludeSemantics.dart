@@ -10,15 +10,25 @@ class OpacitySample extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Center(
           child: Column(
-            children: const [
-              CustomBox(text: 'No Opacity'),
-              SizedBox(height: 15.0),
+            children: [
+              const CustomBox(text: 'No Opacity'),
+              const SizedBox(height: 15.0),
               Opacity(
-                opacity: 1.0,
-                child: CustomBox(text: 'Opacity'),
+                opacity: 0.0,
+                alwaysIncludeSemantics: false,
+                child: Semantics(
+                  onTap: () {
+                    print("Opacity ボックス");
+                  },
+                  label: 'カウンター ボタン',
+                  child: Container(
+                    padding: const EdgeInsets.all(100),
+                    child: const Text('Hello '),
+                  ),
+                ),
               ),
-              SizedBox(height: 15.0),
-              CustomBox(text: 'No Opacity'),
+              const SizedBox(height: 15.0),
+              const CustomBox(text: 'No Opacity'),
             ],
           ),
         ),

@@ -15,6 +15,9 @@
 
 /* #4 AnimatedContainer */
 // import 'animatedContainer/animatedContainer.dart';
+// import 'animatedContainer/animatedContainerOther.dart';
+// import 'animatedContainer/animatedContainerOther2.dart';
+// import 'animatedContainer/animatedContainerOther3.dart';
 // home: const AnimatedContainerSample(),
 
 /* #5 Opacity */
