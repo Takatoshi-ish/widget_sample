@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'FutureBuilder/future_builder.dart';
+import 'FadeTransition/fade_transition.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       title: 'Flutter Expanded Sample',
-      home: FutureBuilderSample(),
+      home: FadeTransitionSample(),
     );
   }
 }
