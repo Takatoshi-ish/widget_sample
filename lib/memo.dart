@@ -37,4 +37,7 @@
 /* #8 Floating Action Button */
 // import 'FloatingActionButton/fab_sample1.dart';
 // import 'FloatingActionButton/fab_sample2.dart';
+// import 'FloatingActionButton/fab_sample3.dart';
+// import 'FloatingActionButton/fab_sample4.dart';
+// import 'FloatingActionButton/fab_sample5.dart';
 // home: FabExample(),
