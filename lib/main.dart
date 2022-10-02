@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'FadeTransition/fade_transition.dart';
+import 'FloatingActionButton/fab_sample1.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       title: 'Flutter Expanded Sample',
-      home: FadeTransitionSample(),
+      home: FabExample(),
     );
   }
 }

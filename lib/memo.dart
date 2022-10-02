@@ -34,4 +34,6 @@
 // import 'FadeTransition/fade_transition.dart';
 // home: FadeTransitionSample(),
 
-
+/* #8 Floating Action Button */
+// import 'FloatingActionButton/fab_sample1.dart';
+// home: FabExample(),
