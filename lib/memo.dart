@@ -26,7 +26,12 @@
 // import 'opacity/animatedOpacity.dart';
 // home: OpacitySample(),
 
-/* #5 Opacity */
+/* #6 FutureBuilder */
 // import 'FutureBuilder/future_builder.dart';
 // home: FutureBuilderSample(),
+
+/* #7 FadeTransition */
+// import 'FadeTransition/fade_transition.dart';
+// home: FadeTransitionSample(),
+
 
