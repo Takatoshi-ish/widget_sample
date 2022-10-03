@@ -41,3 +41,7 @@
 // import 'FloatingActionButton/fab_sample4.dart';
 // import 'FloatingActionButton/fab_sample5.dart';
 // home: FabExample(),
+
+/* #9 Page View */
+// import 'PageView/page_view_sample1.dart';
+// home: PageViewSample(),
