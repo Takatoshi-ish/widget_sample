@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'PageView/page_view_sample1.dart';
+// import 'PageView/page_view_sample1.dart';
+import 'PageView/page_view_sample2.dart';
 
 void main() => runApp(const MyApp());
 
