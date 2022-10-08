@@ -50,3 +50,8 @@
 /* #10 Table */
 // import 'Table/table_sample1.dart';
 // home: TableSample(),
+
+/* #11 SliverAppBar */
+// import 'SliverAppBar/sliver_app_bar_sample.dart';
+// import 'SliverAppBar/sliver_app_bar_sample2.dart';
+// home: SliverAppBarSample(),

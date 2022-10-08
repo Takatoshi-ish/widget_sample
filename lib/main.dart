@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Table/table_sample1.dart';
+import 'SliverAppBar/sliver_app_bar_sample.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //     colorSchemeSeed: const Color(0xff6750a4), useMaterial3: true),
       title: 'Flutter Expanded Sample',
-      home: TableSample(),
+      home: SliverAppBarSample(),
     );
   }
 }
