@@ -8,12 +8,6 @@ class SliverAppBarSample extends StatefulWidget {
 }
 
 class _SliverAppBarSampleState extends State<SliverAppBarSample> {
-  bool _pinned = true;
-  bool _snap = false;
-  bool _floating = false;
-
-// [SliverAppBar]s are typically used in [CustomScrollView.slivers], which in
-// turn can be placed in a [Scaffold.body].
   @override
   Widget build(BuildContext context) {
     return Scaffold(
