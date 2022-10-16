@@ -65,3 +65,7 @@
 /* #13 FadeInImage */
 // import 'FadeInImage/fade_in_image_sample.dart';
 // home: FadeInImageSample(),
+
+/* #14 StreamBuilder */
+// import 'StreamBuilder/stream_builder_sample.dart';
+// home: StreamBuilderSample(),
