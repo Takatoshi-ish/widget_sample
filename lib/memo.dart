@@ -60,4 +60,8 @@
 /* #12 SliverList & SliverGrid */
 // import 'SliverListAndSliverGrid/sliverlist_slivergrid_sample.dart';
 // import 'SliverListAndSliverGrid/sliverlist_sample.dart';
-// home: SliverListAndSliverGridSample
+// home: SliverListAndS
+
+/* #13 FadeInImage */
+// import 'FadeInImage/fade_in_image_sample.dart';
+// home: FadeInImageSample(),

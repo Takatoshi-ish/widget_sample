@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'SliverListAndSliverGrid/sliverlist_sample.dart';
-import 'SliverListAndSliverGrid/slivergrid_sample.dart';
+import 'FadeInImage/fade_in_image_sample.dart';
 
 void main() => runApp(const MyApp());
 
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //     colorSchemeSeed: const Color(0xff6750a4), useMaterial3: true),
       title: 'Flutter Expanded Sample',
-      home: SliverGridSample(),
+      home: FadeInImageSample(),
     );
   }
 }
