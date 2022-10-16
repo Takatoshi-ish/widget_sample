@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'SliverAppBar/sliver_app_bar_sample.dart';
-import 'SliverListAndSliverGrid/silverlist_silvergrid_sample.dart';
+import 'SliverListAndSliverGrid/sliverlist_sample.dart';
+import 'SliverListAndSliverGrid/slivergrid_sample.dart';
 
 void main() => runApp(const MyApp());
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //     colorSchemeSeed: const Color(0xff6750a4), useMaterial3: true),
       title: 'Flutter Expanded Sample',
-      home: SliverListAndSliverGridSample(),
+      home: SliverGridSample(),
     );
   }
 }
