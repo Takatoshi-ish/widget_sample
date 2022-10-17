@@ -69,3 +69,8 @@
 /* #14 StreamBuilder */
 // import 'StreamBuilder/stream_builder_sample.dart';
 // home: StreamBuilderSample(),
+
+/* #15 InheritedModel */
+// import 'InheritedModel/inherited_model_sample.dart';
+// home: InheritedModelApp(),
+
