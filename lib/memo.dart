@@ -74,3 +74,7 @@
 // import 'InheritedModel/inherited_model_sample.dart';
 // home: InheritedModelApp(),
 
+/* #16 ClipRRect */
+// import 'ClipRRect/cliprrect_sample.dart';
+// home: ClipRRectApp(),
+
