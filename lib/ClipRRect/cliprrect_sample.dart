@@ -25,6 +25,7 @@ class ClipRRectExample extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
+          // ClipRRect なし
           Container(
             alignment: Alignment.center,
             constraints: const BoxConstraints(
@@ -34,6 +35,7 @@ class ClipRRectExample extends StatelessWidget {
             color: Colors.blue,
             child: const Text('No ClipRRect', style: style),
           ),
+          // ClipRRect あり　（上下左右に丸みをつける）
           ClipRRect(
             borderRadius: BorderRadius.circular(30.0),
             child: Container(
@@ -46,6 +48,7 @@ class ClipRRectExample extends StatelessWidget {
               child: const Text('ClipRRect', style: style),
             ),
           ),
+          // ClipRRect あり　（下半分にのみ丸みをつける）
           ClipRRect(
             borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(10.0),
