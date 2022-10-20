@@ -35,7 +35,7 @@ class ClipRRectExample extends StatelessWidget {
             color: Colors.blue,
             child: const Text('No ClipRRect', style: style),
           ),
-          // ClipRRect あり　（上下左右に丸みをつける）
+          // ClipRRect あり　（四つの角全てに同じだけの丸みをつける） ・・・①
           ClipRRect(
             borderRadius: BorderRadius.circular(30.0),
             child: Container(
@@ -48,7 +48,7 @@ class ClipRRectExample extends StatelessWidget {
               child: const Text('ClipRRect', style: style),
             ),
           ),
-          // ClipRRect あり　（下半分にのみ丸みをつける）
+          // ClipRRect あり　（四つの角で丸みの度合いが異なる） ・・・②
           ClipRRect(
             borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(10.0),
