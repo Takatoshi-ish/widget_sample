@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'ClipRRect/cliprrect_sample.dart';
+import 'Hero/hero_sample.dart';
 import 'InheritedModel/inherited_explain.dart';
 // import 'InheritedModel/inherited_model_sample.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //     colorSchemeSeed: const Color(0xff6750a4), useMaterial3: true),
       title: 'Flutter Expanded Sample',
-      home: ClipRRectApp(), //MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HeroSample(), //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

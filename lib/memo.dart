@@ -78,3 +78,6 @@
 // import 'ClipRRect/cliprrect_sample.dart';
 // home: ClipRRectApp(),
 
+/* #17 Hero */
+// import 'Hero/hero_sample.dart';
+// home: HeroSample(),
