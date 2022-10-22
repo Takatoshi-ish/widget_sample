@@ -17,6 +17,7 @@ class HeroSample extends StatelessWidget {
         },
         child: Hero(
           tag: 'imageHero',
+          transitionOnUserGestures: true,
           child: Image.network(
             'https://picsum.photos/250?image=9',
           ),
@@ -39,6 +40,7 @@ class DetailScreen extends StatelessWidget {
         child: Center(
           child: Hero(
             tag: 'imageHero',
+            transitionOnUserGestures: true,
             child: Image.network(
               'https://picsum.photos/250?image=9',
             ),
