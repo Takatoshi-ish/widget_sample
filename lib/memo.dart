@@ -81,3 +81,7 @@
 /* #17 Hero */
 // import 'Hero/hero_sample.dart';
 // home: HeroSample(),
+
+/* #18 CustomPaint */
+// import 'CustomPaint/custom_paint_sample.dart';
+// home: CustomPaintSample(),
