@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/animation.dart';
 
 class CustomPaintSample extends StatefulWidget {
+  const CustomPaintSample({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return CustomPaintSampleState();
@@ -16,7 +17,7 @@ class CustomPaintSampleState extends State<CustomPaintSample>
   @override
   void initState() {
     _animationController =
-        AnimationController(duration: const Duration(seconds: 1), vsync: this);
+        AnimationController(duration: const Duration(seconds: 2), vsync: this);
     _animation = Tween(begin: 10.0, end: 100.0).animate(_animationController)
       ..addListener(() {
         setState(() {});
@@ -35,15 +36,24 @@ class CustomPaintSampleState extends State<CustomPaintSample>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CustomPaint Test'),
+        title: const Text('CustomPaint Sample'),
       ),
       body: Center(
         child: Column(
           children: <Widget>[
+            Opacity(
+              opacity: _animationController.isAnimating ? 1.0 : 0.00,
+              child: CustomPaint(
+                size: const Size(0, 200),
+                painter: _CirclePainter(_animation.value),
+              ),
+            ),
             Container(
-              padding: EdgeInsets.all(20.0),
+              margin: const EdgeInsets.only(top: 150),
               child: ElevatedButton(
-                child: Text('Start/Stop'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.yellow, //ボタンの背景色
+                ),
                 onPressed: () {
                   if (_animationController.isAnimating) {
                     _animationController.reset();
@@ -51,12 +61,12 @@ class CustomPaintSampleState extends State<CustomPaintSample>
                     _animationController.repeat();
                   }
                 },
-              ),
-            ),
-            Opacity(
-              opacity: _animationController.isAnimating ? 1.0 : 0.00,
-              child: CustomPaint(
-                painter: _CirclePainter(_animation.value),
+                child: const Text(
+                  '起動/停止',
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
+                ),
               ),
             ),
           ],
@@ -73,12 +83,11 @@ class _CirclePainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    var c = Offset(0, 150.0);
+    var c = const Offset(0, 200.0);
     var paint = Paint()
       ..isAntiAlias = true
       ..color = Colors.blue
-      ..strokeWidth = 5.0
-      ..style = PaintingStyle.stroke;
+      ..strokeWidth = 5.0;
     canvas.drawCircle(
       c,
       radius,
