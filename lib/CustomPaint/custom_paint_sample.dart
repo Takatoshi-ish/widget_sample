@@ -45,7 +45,7 @@ class CustomPaintSampleState extends State<CustomPaintSample>
               opacity: _animationController.isAnimating ? 1.0 : 0.00,
               child: CustomPaint(
                 size: const Size(0, 200),
-                painter: _CirclePainter(_animation.value),
+                foregroundPainter: _CirclePainter(_animation.value),
               ),
             ),
             Container(
