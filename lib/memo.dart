@@ -85,3 +85,7 @@
 /* #18 CustomPaint */
 // import 'CustomPaint/custom_paint_sample.dart';
 // home: CustomPaintSample(),
+
+/* #19 Tooltip */
+// import 'Tooltip/tooltip_sample.dart';
+// home: TooltipSample(),
