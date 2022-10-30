@@ -88,4 +88,8 @@
 
 /* #19 Tooltip */
 // import 'Tooltip/tooltip_sample.dart';
+// import 'Tooltip/tooltip_sample2.dart';
+// import 'Tooltip/tooltip_sample3.dart';
+// import 'Tooltip/tooltip_sample4.dart';
 // home: TooltipSample(),
+// home: TooltipSample(title: 'Tooltip Sample'), // tooltip_sample4.dart
