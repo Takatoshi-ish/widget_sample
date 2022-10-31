@@ -93,3 +93,7 @@
 // import 'Tooltip/tooltip_sample4.dart';
 // home: TooltipSample(),
 // home: TooltipSample(title: 'Tooltip Sample'), // tooltip_sample4.dart
+
+/* #20 Fitted */
+// import 'FittedBox/fitted_box_sample.dart';
+// home: FittedBoxSample(),
