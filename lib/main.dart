@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'FittedBox/fitted_box_sample.dart';
+import 'LayoutBuilder/layout_builder_sample.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //     colorSchemeSeed: const Color(0xff6750a4), useMaterial3: true),
       title: 'Flutter Expanded Sample',
-      home: FittedBoxSample(),
+      home: LayoutBuilderSample(),
     );
   }
 }
