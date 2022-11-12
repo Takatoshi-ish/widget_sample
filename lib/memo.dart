@@ -109,6 +109,11 @@
 
 /* #23 Transform */
 // import 'Transform/transform_sample.dart';
-// import 'Transform/transform_rotate.dart';
 // home: TransformSample(),
+// import 'Transform/transform_rotate.dart';
 // home: TransformRotate(),
+// import 'Transform/transform_scale.dart';
+// home: TransformScale(),
+// import 'Transform/transform_scale.dart';
+// home: TransformTranslate(),
+
