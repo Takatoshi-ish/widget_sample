@@ -102,3 +102,7 @@
 /* #21 LayoutBuilder */
 // import 'LayoutBuilder/layout_builder_sample.dart';
 // home: LayoutBuilderSample(),
+
+/* #22 AbsorbPointer */
+// import 'AbsorbPointer/absorb_pointer_sample.dart';
+// home: AbsorbPointerSample(),
