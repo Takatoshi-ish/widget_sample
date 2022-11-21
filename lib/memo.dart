@@ -124,3 +124,8 @@
 /* #24 BackdropFilter */
 // import 'BackdropFilter/backdrop_filter_sample.dart';
 // home: BackdropFilterSample(),
+
+/* #25 Align */
+// import 'Align/align_sample.dart';
+// import 'Align/align_sample2.dart';
+// home: AlignSample(),

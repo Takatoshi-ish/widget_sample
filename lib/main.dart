@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'BackdropFilter/backdrop_filter_sample.dart';
+import 'Align/align_sample2.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //     colorSchemeSeed: const Color(0xff6750a4), useMaterial3: true),
       title: 'Flutter Expanded Sample',
-      home: BackdropFilterSample(),
+      home: AlignSample(),
     );
   }
 }
