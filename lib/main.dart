@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Align/align_sample2.dart';
+import 'Align/align_sample3.dart';
 
 void main() => runApp(const MyApp());
 
