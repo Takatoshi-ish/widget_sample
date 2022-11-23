@@ -7,12 +7,13 @@ class PositionedSample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(30),
+        margin: const EdgeInsets.only(top: 50),
         child: Stack(
           children: <Widget>[
             Positioned(
-              top: 30,
-              left: 30,
+              top: 50,
+              left: 20,
               height: 250,
               width: 250,
               child: Container(
@@ -20,14 +21,14 @@ class PositionedSample extends StatelessWidget {
                 height: 150,
                 color: Colors.green[300],
                 child: const Text(
-                  'Green',
+                  '緑（一番下）',
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
             ),
             Positioned(
-              top: 70,
-              left: 60,
+              top: 130,
+              left: 50,
               width: 250,
               height: 250,
               child: Container(
@@ -35,22 +36,22 @@ class PositionedSample extends StatelessWidget {
                 height: 150,
                 color: Colors.red[400],
                 child: const Text(
-                  'Red',
+                  '赤（真ん中）',
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
             ),
             Positioned(
-              top: 130,
-              left: 90,
+              top: 210,
+              left: 80,
               width: 250,
               height: 250,
               child: Container(
                 width: 80,
                 height: 80,
-                color: Colors.purple[300],
+                color: Colors.blue[300],
                 child: const Text(
-                  'Purple',
+                  '青（一番上）',
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
