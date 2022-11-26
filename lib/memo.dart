@@ -134,3 +134,7 @@
 /* #26 Positioned */
 // import 'Positioned/positioned_samle.dart';
 // home: PositionedSample(),
+
+/* #27 AnimatedBuilder */
+// import 'AnimatedBuilder/animated_builder_sample.dart';
+// home: AnimatedBuilderSample(),
