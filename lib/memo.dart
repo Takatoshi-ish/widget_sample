@@ -138,3 +138,7 @@
 /* #27 AnimatedBuilder */
 // import 'AnimatedBuilder/animated_builder_sample.dart';
 // home: AnimatedBuilderSample(),
+
+/* #28 Dismissible */
+// import 'Dismissible/dismissible_sample.dart';
+// home: DismissibleSample(),
