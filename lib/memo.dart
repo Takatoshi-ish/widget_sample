@@ -142,3 +142,7 @@
 /* #28 Dismissible */
 // import 'Dismissible/dismissible_sample.dart';
 // home: DismissibleSample(),
+
+/* #29 SizedBox */
+// import 'SizedBox/sizedbox_sample.dart';
+// home: SizedBoxSample(),
