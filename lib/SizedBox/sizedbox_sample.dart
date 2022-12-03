@@ -8,8 +8,8 @@ class SizedBoxSample extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: SizedBox(
-          width: 200,
-          height: 300,
+          width: double.infinity,
+          height: double.infinity,
           child: Card(
             color: Colors.red,
             child: Text('Hello World!'),
