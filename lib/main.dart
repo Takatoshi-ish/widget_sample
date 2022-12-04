@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'SizedBox/sizedbox_sample.dart';
+import 'ValueListenableBuilder/value_listenable_builder_sample.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //     colorSchemeSeed: const Color(0xff6750a4), useMaterial3: true),
       title: 'Flutter Expanded Sample',
-      home: SizedBoxSample(),
+      home: ValueListenableBuilderSample(),
     );
   }
 }

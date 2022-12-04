@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ValueListenableBuilderSample extends StatefulWidget {
-  const ValueListenableBuilderSample({super.key, required this.title});
-  final String title;
+  const ValueListenableBuilderSample({super.key});
 
   @override
   State<ValueListenableBuilderSample> createState() =>
@@ -16,7 +15,7 @@ class _ValueListenableBuilderSampleState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title)),
+      appBar: AppBar(title: const Text("ValueListenableBuilderSample")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
