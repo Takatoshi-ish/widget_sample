@@ -17,7 +17,7 @@ class SizedBoxSample extends StatelessWidget {
               color: Colors.red,
               child: Text('Card 2'),
             ),
-            SizedBox.expand(
+            SizedBox.fromSize(
               child: Card(
                 color: Colors.red,
                 child: Text('Hello World!'),
