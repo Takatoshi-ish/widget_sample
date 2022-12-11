@@ -56,7 +56,6 @@
 // import 'SliverAppBar/sliver_app_bar_sample2.dart';
 // home: SliverAppBarSample(),
 
-
 /* #12 SliverList & SliverGrid */
 // import 'SliverListAndSliverGrid/sliverlist_slivergrid_sample.dart';
 // import 'SliverListAndSliverGrid/sliverlist_sample.dart';
@@ -97,7 +96,6 @@
 /* #20 Fitted */
 // import 'FittedBox/fitted_box_sample.dart';
 // home: FittedBoxSample(),
-
 
 /* #21 LayoutBuilder */
 // import 'LayoutBuilder/layout_builder_sample.dart';
@@ -150,3 +148,11 @@
 /* #30 ValueListenableBuilder */
 // import 'ValueListenableBuilder/value_listenable_builder_sample.dart';
 // home: ValueListenableBuilderSample(),
+
+/* #31 Draggable */
+// import 'Draggable/draggable_sample.dart';
+// home: DraggableSample(),
+
+/* #32 AnimatedList */
+// import 'AnimatedList/animated_list_sample.dart';
+// home: AnimatedListSample(),
