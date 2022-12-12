@@ -156,3 +156,7 @@
 /* #32 AnimatedList */
 // import 'AnimatedList/animated_list_sample.dart';
 // home: AnimatedListSample(),
+
+/* #33 Flexible */
+// import 'Flexible/flexible_sample.dart';
+// home: FlexibleSample(),
