@@ -13,9 +13,9 @@ class FlexibleSample extends StatelessWidget {
         child: Row(
           children: <Widget>[
             Flexible(
+              flex: 3,
               child: Container(
                 alignment: Alignment.center,
-                width: 20,
                 height: 50,
                 color: Colors.red,
                 child: const Text(
@@ -26,6 +26,7 @@ class FlexibleSample extends StatelessWidget {
               ),
             ),
             Flexible(
+              flex: 2,
               child: Container(
                 alignment: Alignment.center,
                 height: 50,
