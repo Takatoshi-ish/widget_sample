@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Flexible/flexible_sample.dart';
+import 'MediaQuery/media_query_sample.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //     colorSchemeSeed: const Color(0xff6750a4), useMaterial3: true),
       title: 'Flutter Expanded Sample',
-      home: FlexibleSample(),
+      home: MediaQuerySample(),
     );
   }
 }

@@ -10,22 +10,23 @@ class MediaQuerySample extends StatefulWidget {
 class _MediaQuerySampleState extends State<MediaQuerySample> {
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final orientation = MediaQuery.of(context).orientation;
+    final textScaleFactor = MediaQuery.of(context).textScaleFactor;
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('FadeInImage Sample'),
+        title: const Text('MediaQuery Sample'),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Center(
-          child: FadeInImage.assetNetwork(
-            height: 300,
-            width: 300,
-            fadeInCurve: Curves.bounceIn,
-            fadeInDuration: Duration(milliseconds: 1000),
-            fadeOutCurve: Curves.easeOutCubic,
-            fadeOutDuration: Duration(milliseconds: 1000),
-            placeholder: 'images/waiting.png',
-            image:
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Google-flutter-logo.svg/440px-Google-flutter-logo.svg.png',
+          child: Column(
+            children: [
+              Text('size : $size'),
+              Text('orientation : $orientation'),
+              Text('textScaleFactor : $textScaleFactor'),
+            ],
           ),
         ),
       ),

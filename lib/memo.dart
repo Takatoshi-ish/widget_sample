@@ -160,3 +160,7 @@
 /* #33 Flexible */
 // import 'Flexible/flexible_sample.dart';
 // home: FlexibleSample(),
+
+/* #34 MediaQuery */
+// import 'MediaQuery/media_query_sample.dart';
+// home: MediaQuerySample(),
