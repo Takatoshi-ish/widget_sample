@@ -163,4 +163,4 @@
 
 /* #34 MediaQuery */
 // import 'MediaQuery/media_query_sample.dart';
-// home: MediaQuerySample(),
+// home: MediaQuerySample(), 
